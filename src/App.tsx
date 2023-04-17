@@ -1,14 +1,11 @@
-import { useState } from "react";
-import { CardValidate } from "@solussaude-ui-teste/react_v1/dist";
-import "./App.css";
+import { ProductsProvider } from "./hook/useProducts";
+import { Products } from "./screens/Products";
 
 function App() {
   return (
-    <div className="App">
-      <h1>
-        <Example textValue="a" visible />
-      </h1>
-    </div>
+    <ProductsProvider>
+      <Products />
+    </ProductsProvider>
   );
 }
 
